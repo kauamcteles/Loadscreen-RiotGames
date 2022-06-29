@@ -19,6 +19,10 @@
     --vermelho: #cf3c3f;
 }
 
+.main{
+    display: flex;
+}
+
 .login{
     display: flex;
     flex-direction: column;
@@ -27,6 +31,15 @@
     max-width: 500px;
     min-height: 100vh;
     padding: clamp(35px, 8%, 70px);
+    justify-content: space-between;
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .login_logo{
@@ -83,8 +96,8 @@
     display: flex;
     gap: 10px;
     width: 100%;
-    margin-top: 20px;
-
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 .login_icons img{
@@ -117,7 +130,7 @@
 .login_label--checkbox {
     width: 100%;
     margin: 15px 0;
-    margin-bottom: 50px;
+    margin-bottom: 1px;
     font-size: 0.9em;
     font-weight: 500;
     display: flex;
@@ -149,7 +162,7 @@
     margin: 2px 6px;
 }
 
-.login__button img{
+.login__button{
     width: 60px;
     height: 60px;
     padding: 20px;
@@ -163,13 +176,42 @@
     margin-bottom: 60px;
 }
 
-.login__button svg {
+.login__button svg{
     fill: white;
-}
+  }
 
-.login__button:disabled {
+.login__button:disabled{
     cursor: auto;
     background-color: white;
-    border: 2px solid var(--light-grey);
+    border: 2px solid var(--cinza-claro);
   }
-  
+
+  .login__button:disabled svg{
+  fill: var(--cinza)
+}
+
+.Links_Login{
+    font-size: 0.8em;
+    text-decoration: none;
+    color: var(--cinza-medio);
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.Links_Login2{
+    font-size: 0.8em;
+    text-decoration: none;
+    color: var(--cinza-medio);
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.tela_wallpaper{
+    width: 100%;
+    background-image: url('./images/tela.jpg');
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+}
