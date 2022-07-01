@@ -215,3 +215,14 @@ main {
     background-position: center;
     flex: 1;
 }
+
+.caixa-select{
+    width: 60%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9em;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid var(--cinza-escuro);
+}
